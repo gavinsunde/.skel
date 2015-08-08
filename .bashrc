@@ -13,6 +13,11 @@ source .aliases
 
 force_color_prompt=yes
 
-PS1='\[\e[0;32m\]\u@\h:\[\e[m\]\e[0;34m\w\e[m \[\e[0;32m\]\$\[\e[m\] '
+PS1='\[\e[0;32m\][ \u@\h:\[\e[m\]\e[0;34m\w\e[m\[\e[0;32m\] ] \n\$\[\e[m\] '
+
+
+alias ls='ls --color=auto'
+
+alias pacman='sudo pacman'
 
 
