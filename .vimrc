@@ -1,5 +1,6 @@
 
 set nocompatible
+set t_Co=16
 filetype off
 
 set rtp+=~/.vim/bundle/vundle
@@ -12,6 +13,12 @@ Plugin 'gmarik/vundle'
 "~/.vim/bundle/vim-colors-solarized
 Plugin 'altercation/vim-colors-solarized'
 
+Plugin 'fatih/vim-go'
+
+Plugin 'scrooloose/syntastic'
+
+Plugin 'nathanaelkane/vim-indent-guides'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -20,9 +27,13 @@ set backspace=indent,eol,start
 set hidden
 
 set number
+set ruler
+set textwidth=100
+set colorcolumn=100
+
 syntax on
+"colorscheme solarized
 set background=dark
-colorscheme solarized
 set hlsearch
 
 set tabstop=4
@@ -31,4 +42,14 @@ set shiftwidth=4
 set expandtab
 
 inoremap jj <esc>
+
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
