@@ -1,3 +1,8 @@
+"
+"vimrc file
+"
+"To load plugins after adding below run:
+" :PluginInstall inside vim.
 
 set nocompatible
 set t_Co=16
@@ -13,7 +18,11 @@ Plugin 'gmarik/vundle'
 "~/.vim/bundle/vim-colors-solarized
 Plugin 'altercation/vim-colors-solarized'
 
+Plugin 'digitaltoad/vim-jade'
+
 Plugin 'fatih/vim-go'
+
+Plugin 'ekalinin/Dockerfile.vim'
 
 Plugin 'scrooloose/syntastic'
 
@@ -32,6 +41,7 @@ set textwidth=100
 set colorcolumn=100
 
 syntax on
+"let g:solarized_termcolors=256
 "colorscheme solarized
 set background=dark
 set hlsearch

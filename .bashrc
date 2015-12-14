@@ -13,8 +13,6 @@ force_color_prompt=yes
 
 PS1='\[\e[0;32m\][ \u@\h:\[\e[m\]\e[0;34m\w\e[m\[\e[0;32m\] ]\$\[\e[m\] '
 
-
-
 alias ls='ls --color=auto'
 
 alias t='tmux'
