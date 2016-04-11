@@ -28,6 +28,8 @@ Plugin 'scrooloose/syntastic'
 
 Plugin 'nathanaelkane/vim-indent-guides'
 
+Plugin 'Valloric/YouCompleteMe'
+
 call vundle#end()
 
 filetype plugin indent on

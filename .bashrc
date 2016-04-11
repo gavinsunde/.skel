@@ -6,19 +6,19 @@
 [[ $- != *i* ]] && return
 
 # Blue mac hex = 
-export GOPATH=$HOME/go
+export GOPATH=$HOME/code/go
 export PATH=$PATH:$GOPATH/bin
 
 force_color_prompt=yes
 
-PS1='\[\e[0;32m\][ \u@\h:\[\e[m\]\e[0;34m\w\e[m\[\e[0;32m\] ]\$\[\e[m\] '
+PS1='\[\033[0;32m\]\u:\[\033[0;33m\]\w \[\033[0;32m\]\$ \[\033[0;00m\]'
 
 alias ls='ls --color=auto'
 
-alias t='tmux'
-alias ta='tmux attach'
-alias td='tmux detach'
-alias ts='tmux switch -t'
+alias t='TERM=screen-256color tmux'
+alias ta='TERM=screen-256color tmux attach -t'
+alias td='TERM=screen-256color tmux detach'
+alias ts='TERM=screen-256color tmux switch -t'
 
 alias pacman='sudo pacman'
 
